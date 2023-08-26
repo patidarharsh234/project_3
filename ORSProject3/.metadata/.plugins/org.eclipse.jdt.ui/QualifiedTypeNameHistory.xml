@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="in.co.rays.project_3.model.MarksheetModelInt"/>
+    <fullyQualifiedTypeName name="in.co.rays.project_3.model.MarksheetModelHibImp"/>
+    <fullyQualifiedTypeName name="in.co.rays.project_3.model.ModelFactory"/>
+    <fullyQualifiedTypeName name="in.co.rays.project_3.dto.UserDTO"/>
+    <fullyQualifiedTypeName name="in.co.rays.project_3.util.ServletUtility"/>
+    <fullyQualifiedTypeName name="in.co.rays.project_3.dto.RoleDTO"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+</qualifiedTypeNameHistroy>

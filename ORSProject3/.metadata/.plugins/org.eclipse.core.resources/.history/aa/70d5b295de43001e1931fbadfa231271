@@ -1,0 +1,36 @@
+package in.co.rays.junittest;
+
+
+
+import org.junit.Test;
+
+import in.co.rays.project_3.model.ModelFactory;
+import in.co.rays.project_3.model.UserModelInt;
+import junit.framework.TestCase;
+
+public class TestCaseOne {
+
+	UserModelInt model= null;
+
+	@Test
+	public void unitTesting1() throws Exception {
+		model = ModelFactory.getInstance().getUserModel();
+		model.findByPK(4);
+		assertTrue(model != null);
+	}
+
+	@Test
+	public void unitTesting2() throws Exception {
+		model = ModelFactory.getInstance().getUserModel();
+		model.findByPK(4);
+		assertFalse(model == null);
+	}
+
+	@Test
+	public void unitTesting3() throws Exception {
+		model = ModelFactory.getInstance().getUserModel();
+		model.findByPK(4);
+		assertNotNull(model);
+	}
+
+}

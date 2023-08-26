@@ -1,0 +1,42 @@
+package in.co.rays.junittest;
+
+
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+import in.co.rays.project_3.model.ModelFactory;
+import in.co.rays.project_3.model.UserModelInt;
+import jdk.jfr.Timestamp;
+import junit.framework.TestCase;
+
+@Timestamp
+public class TestCaseOne extends TestCase{
+
+	UserModelInt model= null;
+
+	@Test
+	public void unitTesting1() throws Exception {
+		model = ModelFactory.getInstance().getUserModel();
+		model.findByPK(4);
+		assertTrue(model != null);
+	}
+
+	@Test
+	public void unitTesting2() throws Exception {
+		model = ModelFactory.getInstance().getUserModel();
+		model.findByPK(4);
+		assertFalse(model == null);
+	}
+
+	@Test
+	public void unitTesting3() throws Exception {
+		model = ModelFactory.getInstance().getUserModel();
+		model.findByPK(4);
+		assertNotNull(model);
+	}
+
+}

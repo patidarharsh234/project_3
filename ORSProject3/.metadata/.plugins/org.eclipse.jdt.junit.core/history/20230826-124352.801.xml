@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCaseOne" project="project_3" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="in.co.rays.junittest.TestCaseOne" time="2.442">
+    <testcase name="unitTesting1" classname="in.co.rays.junittest.TestCaseOne" time="2.435"/>
+    <testcase name="unitTesting2" classname="in.co.rays.junittest.TestCaseOne" time="0.003"/>
+    <testcase name="unitTesting3" classname="in.co.rays.junittest.TestCaseOne" time="0.004"/>
+  </testsuite>
+</testrun>
