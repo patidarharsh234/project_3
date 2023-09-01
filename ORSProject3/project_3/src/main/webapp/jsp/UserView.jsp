@@ -55,7 +55,7 @@ i.css {
 							  long id=DataUtility.getLong(request.getParameter("id"));
 							
 							
-								if (dto.getId()!=null) {
+								if (dto.getId()!=null&&dto.getId()>0) {
 							%>
 							<h3 class="text-center default-text text-dark">Update User</h3>
 							<%
@@ -146,7 +146,7 @@ i.css {
       </div>
     </div>
 	<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("emailId", request)%></font></br>
-				<% 		if (dto.getId()!=null) {}else{
+				<% 		if (dto.getId()!=null&&dto.getId()>0) {}else{
 							%>
 
                                <span class="pl-sm-5"><b>Password</b>
@@ -229,7 +229,7 @@ i.css {
       </div>
     </div>	
 	<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("dob", request)%></font></br>
-				<% 	if (dto.getId()!=null) {
+				<% 	if (dto.getId()!=null&&dto.getId()>0) {
 							%>
 
 							<div class="text-center">
